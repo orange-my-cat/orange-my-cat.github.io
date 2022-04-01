@@ -7,34 +7,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-github_username:  jekyll
+github_username:  orange-my-cat
+linkedin_username: ivanpeh
 
-email: "someone@example.com"
-rss: true  # remove this line if you don't want to show an RSS link at the bottom
-facebook: deanattali
-github: daattali
-twitter: daattali
-patreon: DeanAttali
-youtube: c/daattali
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
