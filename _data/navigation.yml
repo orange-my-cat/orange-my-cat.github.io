@@ -1,12 +1,12 @@
 - title: About
-  url: /about.html
+  url: about.html
 - Title: Blog
-  url: /blog.html
+  url: blog.html
   sublinks:
     - title: FAQ
-      url: /faq.html
+      url: faq.html
     - title: Documentation
-      url: /documentation.html
+      url: documentation.html
     - title: separator
     - title: Customer Support
-      url: /customer-support.html
+      url: customer-support.html
