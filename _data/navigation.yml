@@ -3,7 +3,7 @@ links:
   - title: About
     url: about.html
 
-  - Title: Blog
+  - title: Blog
     url: blog.html
     sublinks:
       - title: FAQ
