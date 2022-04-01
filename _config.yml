@@ -9,6 +9,3 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username:  orange-my-cat
 linkedin_username: ivanpeh
-
-# Build settings
-theme: minima
