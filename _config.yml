@@ -14,3 +14,6 @@ google_analytics: "UA-224679057-1"
 exclude:
 - README.md
 - LICENSE
+
+plugins:
+- jekyll-seo-tag
