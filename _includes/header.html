@@ -10,31 +10,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     {% for link in site.data.navigation %}
-                    {% if link.sublinks %}
-                    <li class="nav-item dropdown">
-                        <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle"
-                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{
-                            link.title }}</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {% for sublink in link.sublinks %}
-                            {% if sublink.title == 'separator' %}
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            {% else %}
-                            <li>
-                                <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{
-                                    sublink.title }}</a>
-                            </li>
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                     </li>
-                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>
