@@ -9,7 +9,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    {% for link in site.data.navigation.links %}
+                    {% for link in site.data.navigation %}
                     {% if link.sublinks %}
                     <li class="nav-item dropdown">
                         <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle"

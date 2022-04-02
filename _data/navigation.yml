@@ -1,15 +1,6 @@
-links:
-
-  - title: About
-    url: about.html
-
-  - title: Blog
-    url: blog.html
-    sublinks:
-      - title: FAQ
-        url: faq.html
-      - title: Documentation
-        url: documentation.html
-      - title: separator
-      - title: Customer Support
-        url: customer-support.html
+- title: About
+  url: about/
+- title: Blog
+  url: blog/
+- title: School
+  url: school/
