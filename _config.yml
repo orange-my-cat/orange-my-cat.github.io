@@ -3,8 +3,8 @@ title: Ivan
 description: >- 
   My personal webpage
 
-baseurl: "/"
-url: "https://orange-my-cat.github.io"
+baseurl: ""
+url: "https://orange-my-cat.github.io/"
 
 github_username:  orange-my-cat
 linkedin_username: ivanpeh
