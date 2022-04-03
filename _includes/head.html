@@ -33,6 +33,6 @@
 
     <!-- Meta Tags -->
     {% seo title=false %}
-    <title>{% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} | {% endif %}{{ site.name | escape }}{% unless page.tag or page.title %} | {{ site.description | escape }}{% endunless %}</title>
+    <title>{% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} | {% endif %}{{ site.title | escape }}{% unless page.tag or page.title %} | {{ site.description | escape }}{% endunless %}</title>
 
 </head>
