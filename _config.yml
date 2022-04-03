@@ -19,4 +19,7 @@ plugins:
 - jekyll-seo-tag
 
 defaults:
-  image: /assets/favicon.png
+  - scope:
+      path: ""
+    values:
+      image: /assets/favicon.png
