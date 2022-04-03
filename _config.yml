@@ -22,4 +22,4 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/favicon.png
+      image: /assets/default_preview.png
