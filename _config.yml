@@ -23,3 +23,11 @@ defaults:
       path: ""
     values:
       image: /assets/default_preview.png
+
+social:
+  name: Ivan
+  links:
+    - https://www.linkedin.com/in/ivanpeh
+    - https://github.com/orange-my-cat
+
+author: ivan
