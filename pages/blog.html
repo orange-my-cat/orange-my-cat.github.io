@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Blog
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, tortor in auctor cursus, mi tellus aliquet mi, at facilisis sem elit et lorem.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, tortor in auctor cursus, mi
+tellus aliquet mi, at facilisis sem elit et lorem.
 permalink: /blog
 ---
 
@@ -14,3 +15,12 @@ permalink: /blog
     bibendum tristique. In ut urna nisl. Vestibulum tempus ante nec dictum ultricies. Nunc justo risus, feugiat sed
     magna sit amet, rhoncus rhoncus quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
     turpis egestas. Donec auctor turpis faucibus pellentesque scelerisque. Phasellus eu eros turpis.</p>
+
+{% for post in site.posts %}
+<article>
+    <a href="{{ site.url }}{{ post.url }}">
+            <h2><span>{{ post.title }}</span></h2>
+        </div>
+    </a>
+</article>
+{% endfor %}
