@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 title: Blog
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus, tortor in auctor cursus, mi
 tellus aliquet mi, at facilisis sem elit et lorem.
@@ -15,13 +15,3 @@ permalink: /blog
     bibendum tristique. In ut urna nisl. Vestibulum tempus ante nec dictum ultricies. Nunc justo risus, feugiat sed
     magna sit amet, rhoncus rhoncus quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
     turpis egestas. Donec auctor turpis faucibus pellentesque scelerisque. Phasellus eu eros turpis.</p>
-
-{% for post in site.posts %}
-<article>
-    <h2>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <time datetime="{{ post.date | date: " %Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-    {{ post.content }}
-</article>
-{% endfor %}
