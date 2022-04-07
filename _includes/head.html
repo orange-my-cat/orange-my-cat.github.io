@@ -35,6 +35,9 @@
 
     <!-- Meta Tags -->
     <title>{% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} | {% endif %}{{ site.title | escape }}{% unless page.tag or page.title %} | {{ site.description | escape }}{% endunless %}</title>
+    
     {% seo title=false %}
 
+    <!-- Style -->
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/style.css">
 </head>
