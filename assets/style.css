@@ -2,6 +2,7 @@
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem
 }
 
 @media (max-width: 769px) {
