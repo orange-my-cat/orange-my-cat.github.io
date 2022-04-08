@@ -4,15 +4,16 @@ layout: default
 
 {{ content }}
 
-{% for post in site.posts %}
-{% if post.path contains page.url %}
+
 {% if page.url contains 'school' %}
+{% for post in site.posts reversed %}
+{% if post.path contains page.url %}
 <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+{% endif %}
+{% endfor %}
 {% else %}
 <p>
     <a href="{{ post.url }}">{{ post.title }}</a>
     <time datetime="{{ post.date | date: " %Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
 </p>
 {% endif %}
-{% endif %}
-{% endfor %}
