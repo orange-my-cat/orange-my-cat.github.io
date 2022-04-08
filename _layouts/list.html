@@ -6,7 +6,7 @@ layout: default
 
 {% for post in site.posts %}
 {% if post.path contains page.url %}
-{% if page.url == 'school' %}
+{% if page.url contains 'school' %}
 <p><a href="{{ post.url }}">{{ post.title }}</a></p>
 {% else %}
 <p>
