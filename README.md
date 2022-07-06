@@ -17,4 +17,4 @@ I also changed from Bootstrap to Tailwind as it allows more customization of the
 
 <img src="themes/custom/static/logo.png" alt="logo" width="100"/>  
 
-Inspired by Zimu Design from 抖音.
+I tried to make it look like my name. Inspired by Zimu Design from 抖音.
