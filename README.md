@@ -15,7 +15,6 @@ I also changed from Bootstrap to Tailwind as it allows more customization of the
 
 ### logo is created using photoshop
 
-<br>
-<img src="themes/custom/static/logo.png" alt="logo" width="100"/>
-<br>
+<img src="themes/custom/static/logo.png" alt="logo" width="100"/>  
+
 Inspired by Zimu Design from 抖音.
