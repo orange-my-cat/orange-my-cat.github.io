@@ -35,4 +35,9 @@
     <meta name="twitter:title" content="{{ if .IsHome -}}{{ .Site.Params.seotitle | emojify }}{{- else -}}{{ .Title | emojify }} - {{ .Site.Params.seotitle | emojify }}{{- end }}" />
     <meta name="twitter:description" content="{{ .Site.Params.description }}" />
 
+    {{ if .Site.Params.image -}}
+    <meta name="twitter:image" content=".Site.Params.image" />
+    <meta property="og:image" content=".Site.Params.image" />
+    {{- end }}
+
 </head>
