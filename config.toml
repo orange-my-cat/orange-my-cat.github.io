@@ -1,4 +1,9 @@
 baseURL = 'https://orange-my-cat.github.io/'
 languageCode = 'en-us'
-title = 'Ivan'
+title = 'Ivan:high_brightness:'
 theme = 'custom'
+googleAnalytics = 'G-4T0TFTB785'
+
+[Params]
+  description = 'Data Science & Mathematics Student'
+  enableEmoji = 'true'

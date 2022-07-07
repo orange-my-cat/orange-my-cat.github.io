@@ -3,22 +3,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T0TFTB785"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-4T0TFTB785');
-    </script>
+    {{ template "_internal/google_analytics.html" . }}
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    {{ if .IsHome -}}
+    <title>{{ .Site.Title | emojify }}</title>
+    <meta name="title" content="{{ .Site.Title | emojify }}" />
+    {{- else -}}
+    <title>{{ .Title | emojify }} - {{ .Site.Title | emojify }}</title>
+    <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
+    {{- end }}
+
+    {{ if .Site.Params.description -}}
+    <meta name="description" content="{{ .Site.Params.description }}" />
+    {{- end }}
+
     <!-- Favicons -->
-    <link rel="icon" type="image/png"  href="{{ "logo.png" | relURL}}">
+    <link rel="icon" type="image/png" href="{{ "logo.png" | relURL}}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "logo.png" | relURL}}">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ "logo.png" | relURL}}">
     <link rel="apple-touch-icon-precomposed" href="{{ "logo.png" | relURL}}">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
 
 </head>
