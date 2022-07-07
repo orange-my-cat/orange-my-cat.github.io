@@ -8,4 +8,4 @@ googleAnalytics = 'G-4T0TFTB785'
   seotitle = 'Ivan'
   description = 'Data Science & Mathematics Student'
   enableEmoji = 'true'
-  image = ['feature-image.jpg']
+  image = 'feature-image.jpg'

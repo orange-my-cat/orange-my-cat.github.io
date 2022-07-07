@@ -36,8 +36,8 @@
     <meta name="twitter:description" content="{{ .Site.Params.description }}" />
 
     {{ if .Site.Params.image -}}
-    <meta name="twitter:image" content="{{ .Site.Params.image }}" />
-    <meta property="og:image" content="{{ .Site.Params.image }}" />
+    <meta name="twitter:image" content="{{ .Site.Params.image | relURL }}" />
+    <meta property="og:image" content="{{ .Site.Params.image | relURL }}" />
     {{- end }}
 
 </head>
