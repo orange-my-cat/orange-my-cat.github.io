@@ -9,10 +9,10 @@
 
     {{ if .IsHome -}}
     <title>{{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Site.Title | emojify }}" />
+    <meta name="title" content="{{ .Site.Params.seotitle | emojify }}" />
     {{- else -}}
     <title>{{ .Title | emojify }} - {{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
+    <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Params.seotitle | emojify }}" />
     {{- end }}
 
     {{ if .Site.Params.description -}}
@@ -27,7 +27,12 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
+    <meta property="og:title" content="{{ if .IsHome -}}{{ .Site.Params.seotitle | emojify }}{{- else -}}{{ .Title | emojify }} - {{ .Site.Params.seotitle | emojify }}{{- end }}" />
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ if .IsHome -}}{{ .Site.Params.seotitle | emojify }}{{- else -}}{{ .Title | emojify }} - {{ .Site.Params.seotitle | emojify }}{{- end }}" />
+    <meta name="twitter:description" content="{{ .Site.Params.description }}" />
 
 </head>
