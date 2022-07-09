@@ -1,12 +1,25 @@
 {{ define "main" }}
 
 <div class="flex flex-wrap items-end">
-    <img class="grow object-cover w-full rounded-xl mb-8 lg:w-3/5 sm:mr-8" src="{{ "me.jpg" | relURL}}">
+    <img class="grow object-cover w-full rounded-xl mb-8 lg:w-3/5 sm:mr-8 border-solid border-2" src="{{ "me.png" | relURL}}">
     <span class="text-4xl font-bold mb-8">Hi, I'm Ivan!</span>
 </div>
 
 <div class="text-justify">
-    <p>I'm a maths nerd and a </p>
+    <p>I'm a maths nerd and a tech enthusiast studying at <a class="underline decoration-2 hover:decoration-orange-400" href="https://www.uwa.edu.au/">the University of Western Australia</a>. I enjoy learning about new topics especially in the domains of computing and maths. I also enjoy solving challenges that makes me think a lot. It just gives me a sense of accomplishment after that. 😂</p>
+    <br>
+    <p>I mainly code in <a class="underline decoration-2 hover:decoration-orange-400" href="https://www.python.org/">Python</a> using functional programming. It just does the job way quicker than any other language lol.</p>
+</div>
+
+<div class="mt-4">
+    <p class="text-xl font-bold">Posts</p>
+    <ul class="list-disc">
+        {{ range .Pages }}
+        <li>
+            <a class="underline decoration-2 hover:decoration-orange-400" href="{{.Permalink}}">{{.Title}}</a> - {{.Date.Format "2 January, 2006"}}
+        </li>
+        {{ end }}
+    </ul>
 </div>
 
 {{ end }}
