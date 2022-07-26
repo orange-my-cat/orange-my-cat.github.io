@@ -2,24 +2,36 @@
 
 <img class="object-cover w-full h-60 rounded-xl mb-8 border-solid border-2 mb-8" src="{{ "me.png" | relURL}}">
 <div class="mb-8">
-    <span class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-200 to-pink-200">Hi, I'm Ivan!</span>
+    <span class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-200 to-pink-200">Hello, I'm Ivan!</span>
 </div>
 
 <div class="text-justify">
-    <p>I'm a maths nerd and a tech enthusiast studying at <a class="underline decoration-2 hover:decoration-orange-400" href="https://www.uwa.edu.au/">the University of Western Australia</a>. I enjoy learning about new topics especially in the domains of computing and maths. I also enjoy solving challenges that makes me think a lot. It just gives me a sense of accomplishment after that. 😂</p>
+    <p>
+        I'm a maths nerd and a tech enthusiast studying at that enjoys building things. A second year at
+        <a class="underline decoration-2 hover:decoration-orange-400" href="https://www.uwa.edu.au/">
+            the University of Western Australia</a> majoring in 
+        <a class="underline decoration-2 hover:decoration-orange-400" href="https://handbooks.uwa.edu.au/majordetails?code=mjd-mthst">
+            Mathematics and Statistics</a> and 
+        <a class="underline decoration-2 hover:decoration-orange-400" href="https://handbooks.uwa.edu.au/majordetails?code=mjd-datsc">
+            Data Science</a>. Learn more about me 
+        <a class="underline decoration-2 hover:decoration-orange-400" href="https://www.linkedin.com/in/ivanpeh/">
+            here</a>!
+    </p>
 </div>
 
 <div class="mt-4">
     <p class="text-xl font-bold mb-4">New Posts</p>
     <div class="grid-cols-1 ">
-        {{ range first 4 .Pages }}
-        <div class="border-solid border-2 rounded-xl p-2 hover:bg-slate-400 hover:text-black">
-            <a class="" href="{{.Permalink}}">
-                <p class="text-xl font-semibold">{{.Title}}</p>
-                <p>{{.Date.Format "2 January, 2006"}}</p>
-            </a>
-        </div>
-        {{ end }}
+        {{ range (where .Site.Pages "Section" "blog") }}
+            {{ range first 4 .Pages }}
+            <div class="border-solid border-2 rounded-xl p-2 hover:bg-slate-400 hover:text-black">
+                <a class="" href="{{.Permalink}}">
+                    <p class="text-xl font-semibold">{{.Title}}</p>
+                    <p>{{.Date.Format "2 January, 2006"}}</p>
+                </a>
+            </div>
+            {{ end }}
+        {{ end}}
     </div>
 </div>
 
@@ -27,7 +39,10 @@
     <p class="text-xl font-bold mb-4">Currently I'm</p>
     <ul class="list-inside list-disc">
         <li>
-            learning Tailwind CSS!
+            Using Notion for better organization
+        </li>
+        <li>
+            Trying to lose weight with more exercise!
         </li>
     </ul>
 </div>
