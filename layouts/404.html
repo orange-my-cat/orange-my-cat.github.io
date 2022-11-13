@@ -30,14 +30,6 @@
             div.style.display = "none";
         }
     }
-
-    var stroke = document.getElementsByClassName("item");
-    var j;
-    for (j = 0; j < stroke.length; j++) {
-        stroke[j].onmousedown = function () {
-            this.innerHTML='<del>helloworld</del>';
-        }
-    }
         
     function addToDo() {
         var li = document.createElement("li");
