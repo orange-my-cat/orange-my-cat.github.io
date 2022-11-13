@@ -5,13 +5,15 @@
 
 <body class="bg-slate-800">
     <div class="container mx-auto w-full px-8 sm:px-12 lg:px-16 text-center text-slate-200">
-        <p style="font-size: 25px;margin-bottom: 10px;">TO DO LIST</p>
-        <input type="text" id="todo-input" placeholder="Add item" class="todo-input">
-        <span onclick="addToDo()" class="addBtn">Add</span>
-        <ul id="list">
-            <li>Item 1</li>
-            <li>Item 2</li>
-        </ul>
+        <div class="content">        
+            <p style="font-size: 25px;margin-bottom: 10px;">TO DO LIST</p>
+            <input type="text" id="todo-input" placeholder="Add item" class="todo-input">
+            <span onclick="addToDo()" class="addBtn">Add</span>
+            <ul id="list">
+                <li>Item 1<span class="close">&#215;</span></li>
+                <li>Item 2<span class="close">&#215;</span></li>
+            </ul>
+        </div>
     </div>
 
     {{- partial "footer.html" . -}}
@@ -19,7 +21,16 @@
 </body>
 
 <script>
-        function addToDo() {
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+        
+    function addToDo() {
         var li = document.createElement("li");
         var inputValue = document.getElementById("todo-input").value;
         var t = document.createTextNode(inputValue);

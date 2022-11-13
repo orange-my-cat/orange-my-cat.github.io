@@ -40,4 +40,37 @@
     <meta property="og:image" content="{{ .Site.Params.image | relURL }}" />
     {{- end }}
 
+    <style>
+        .content ul li {
+            position: relative;
+            padding: 12px 50px 12px 20px;
+            background: #eee;
+            font-size: 20px;
+            transition: 0.2s;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 1;
+        }
+
+        .content ul li:nth-child(odd) {
+            background: #f9f9f9;
+        }
+
+        .content ul li:hover {
+            background: #ddd;
+        }
+
+        .close {
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px 16px 12px 16px;
+        }
+
+        .close:hover {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
 </head>
