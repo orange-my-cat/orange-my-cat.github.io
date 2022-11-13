@@ -5,15 +5,44 @@
 
 <body class="bg-slate-800">
     <div class="container mx-auto w-full px-8 sm:px-12 lg:px-16 text-center text-slate-200">
-        <p class="text-[10rem] font-bold tracking-wider">404</p>
-        <p class="text-2xl font-semibold">PAGE NOT FOUND</p>
-        <br>
-        <p class="text-2xl">it appears you have ventured into uncharted territory</p>
-        <p class="text-2xl">let's <a href="/" class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400/80 to-pink-400/80">go home</a></p>
+        <p style="font-size: 25px;margin-bottom: 10px;">TO DO LIST</p>
+        <input type="text" id="todo-input" placeholder="Add item" class="todo-input">
+        <span onclick="addToDo()" class="addBtn">Add</span>
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
     </div>
 
     {{- partial "footer.html" . -}}
 
 </body>
+
+<script>
+        function addToDo() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("todo-input").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+            document.getElementById("list").appendChild(li);
+        }
+        document.getElementById("todo-input").value = "";
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+    };
+</script>
 
 </html>
