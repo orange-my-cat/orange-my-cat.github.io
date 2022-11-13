@@ -33,9 +33,9 @@
 
     var stroke = document.getElementsByClassName("item");
     var j;
-    for (i = 0; i < close.length; i++) {
-        stroke[i].onclick = function () {
-            this.message.innerHTML='<del>helloworld</del>';
+    for (j = 0; j < stroke.length; j++) {
+        stroke[j].onmousedown = function () {
+            this.innerHTML='<del>helloworld</del>';
         }
     }
         
