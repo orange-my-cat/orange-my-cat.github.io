@@ -3,101 +3,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 
-    {{ template "_internal/google_analytics.html" . }}
+    <!-- Google Analytics -->
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind -->
 
-    {{ if .IsHome -}}
-    <title>{{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Site.Params.seotitle | emojify }}" />
-    {{- else -}}
-    <title>{{ .Title | emojify }} - {{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Params.seotitle | emojify }}" />
-    {{- end }}
-
-    {{ if .Site.Params.description -}}
-    <meta name="description" content="{{ .Site.Params.description }}" />
-    {{- end }}
+    <!-- SEO -->
+    
+    <!-- Title -->
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="{{ "logo.png" | relURL}}">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "logo.png" | relURL}}">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ "logo.png" | relURL}}">
-    <link rel="apple-touch-icon-precomposed" href="{{ "logo.png" | relURL}}">
 
-    <link rel="canonical" href="{{ .Permalink }}">
+    
 
-    <meta property="og:title" content="{{ if .IsHome -}}{{ .Site.Params.seotitle | emojify }}{{- else -}}{{ .Title | emojify }} - {{ .Site.Params.seotitle | emojify }}{{- end }}" />
-    <meta property="og:description" content="{{ .Site.Params.description }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{{ if .IsHome -}}{{ .Site.Params.seotitle | emojify }}{{- else -}}{{ .Title | emojify }} - {{ .Site.Params.seotitle | emojify }}{{- end }}" />
-    <meta name="twitter:description" content="{{ .Site.Params.description }}" />
-
-    {{ if .Site.Params.image -}}
-    <meta name="twitter:image" content="{{ .Site.Params.image | relURL }}" />
-    <meta property="og:image" content="{{ .Site.Params.image | relURL }}" />
-    {{- end }}
-
-    <style>
-        .content ul li {
-            position: relative;
-            padding: 12px 50px 12px 20px;
-            background: #eee;
-            font-size: 20px;
-            transition: 0.2s;
-            text-align: left;
-            font-family: Arial, Helvetica, sans-serif;
-            z-index: 1;
-        }
-
-        .content ul li:nth-child(odd) {
-            background: #f9f9f9;
-        }
-
-        .content ul li:hover {
-            background: #ddd;
-        }
-
-        .close {
-            cursor: pointer;
-            position: absolute;
-            right: 0;
-            top: 0;
-            padding: 12px 16px 12px 16px;
-        }
-
-        .close:hover {
-            background-color: #f44336;
-            color: white;
-        }
-
-        .addBtn {
-            padding: 10px;
-            width: 25%;
-            background: #d9d9d9;
-            color: #555;
-            float: left;
-            text-align: center;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-            border-radius: 0;
-            float: right;
-        }
-
-        .todo-input {
-            margin: 0;
-            border: none;
-            border-radius: 0;
-            width: 70%;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        .strike {
-            text-decoration: line-through;
-        }
-    </style>
 </head>

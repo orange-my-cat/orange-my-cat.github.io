@@ -10,11 +10,5 @@ I also changed from Bootstrap to Tailwind as it allows more customization of the
 
 1. Install [Hugo](https://gohugo.io/getting-started/installing/).
 2. Create your website with `hugo new site sitename`.
-3. Create your theme with `hugo new theme themename`.
-4. Start coding!
-
-### logo is created using photoshop
-
-<img src="themes/custom/static/logo.png" alt="logo" width="100"/>  
-
-I tried to make it look like my name. Inspired by Zimu Design from 抖音.
+3. Start coding!
+4. Run the site with `hugo serve`.
