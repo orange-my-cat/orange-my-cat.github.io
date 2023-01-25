@@ -4,5 +4,6 @@ title = 'Ivan'
 googleAnalytics = 'G-4T0TFTB785'
 
 [Params]
+  longTitle = 'Ivan - Data Science & Maths Student at UWA'
   description = 'desc'
   image = '/seo_image.png'

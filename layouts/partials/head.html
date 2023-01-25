@@ -9,17 +9,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- SEO -->
-    <meta name="title" content="{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}" />
+    <meta name="title" content="{{ if .IsHome }}{{ .Site.Params.longTitle }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}" />
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
     
-    <meta property="og:site_name" content="">
+    <meta property="og:site_name" content="{{ if .IsHome }}{{ .Site.Params.longTitle }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
     <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ .Site.Params.image | relURL }}" />
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.longTitle }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
     <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
     <meta name="twitter:image" content="{{ .Site.Params.image | relURL }}" />
 
@@ -32,5 +32,5 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="/favicon.png">
 
-    <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Params.longTitle }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
 </head>
