@@ -2,19 +2,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T0TFTB785"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4T0TFTB785');
-    </script>
+    <!-- Google Analytics -->
+    {{ template "_internal/google_analytics.html" . }}
 
     <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- SEO -->
+    <meta name="title" content="{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}" />
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
     
-    <!-- Title -->
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ .Site.Params.image | relURL }}" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}">
+    <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
+    <meta name="twitter:image" content="{{ .Site.Params.image | relURL }}" />
+
+    <link rel="canonical" href="{{ .Permalink }}">
 
     <!-- Favicons -->
     <link rel="icon" href="/favicon.png" />
@@ -22,4 +31,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="/favicon.png">
+
+    <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
 </head>
