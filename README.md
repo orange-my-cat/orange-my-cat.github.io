@@ -2,7 +2,7 @@
 
 ### why hugo and tailwind?
 
-Previously, I used Jekyll for my personal site because it integrates well with GitHub Pages but changed it to Hugo for the current implementation. Hugo feels faster and allows me to code and view changes at the same time without needing me to rebuild the site.
+I tried using Jekyll for my personal site previously because it has built-in support for GitHub Pages but changed it to Hugo. Hugo builds quicker and is easier to use compared to Jekyll.
 
 I also changed from Bootstrap to Tailwind as it allows more customization of the website and prevents it from looking like all the other Bootstrap websites out there.
 
