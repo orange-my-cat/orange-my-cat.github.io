@@ -2,7 +2,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 
-    {{ template "_internal/google_analytics.html" . }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T0TFTB785"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4T0TFTB785');
+    </script>
 
     <!-- Tailwind -->
 
