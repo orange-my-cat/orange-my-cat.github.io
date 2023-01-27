@@ -9,15 +9,24 @@
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>    
             </div>
-            <div id="closeMenu" onclick="closeMenu()" class="hover:text-red-600 cursor-pointer hidden">
+        </div>
+    </div>
+    <div id="menu" class="flex justify-end fixed top-full w-full h-full bg-red-600 transition-transform duration-200">
+        <div class="flex fixed w-full h-full font-semibold tracking-wider text-6xl md:text-8xl" style="font-family: 'Gruppo', cursive;">
+            <div class="grid grid-flow-row auto-rows-max w-full content-center">
+                <div class="text-center text-white hover:text-black">HOME</div>
+                <div class="text-center text-white hover:text-black">BLOG</div>
+                <div class="text-center text-white hover:text-black">HERE</div>
+                <div class="text-center text-white hover:text-black">SOMEWHERE</div>
+            </div>
+        </div>
+        <div class="mt-2 mr-2 md:mt-8 md:mr-8 z-50">
+            <div id="closeMenu" onclick="closeMenu()" class="text-white hover:text-black cursor-pointer hidden">
                 <svg class="h-20 w-20 md:h-32 md:w-32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                 </svg> 
             </div>
         </div>
-    </div>
-    <div id="menu" class="">
-
     </div>
 </nav>
 
@@ -31,6 +40,8 @@
         open.classList.add("hidden");
         close = document.getElementById("closeMenu");
         close.classList.remove("hidden");
+        menu = document.getElementById("menu");
+        menu.classList.add("-translate-y-full");
     };
 
     function closeMenu() {
@@ -38,5 +49,7 @@
         open.classList.remove("hidden");
         close = document.getElementById("closeMenu");
         close.classList.add("hidden");
+        menu = document.getElementById("menu");
+        menu.classList.remove("-translate-y-full");
     };
 </script>
