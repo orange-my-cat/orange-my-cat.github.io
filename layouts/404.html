@@ -11,10 +11,13 @@
     window.onload = () => {
         text = document.getElementById("404")
         displayText = "404 NOT FOUND"
-        for (i=0; i<8; i++) {
+        j = 1
+        for (i=0; i<12; i++) {
             displayText = displayText + " " + displayText
+            j = j + j
         }
         text.innerText = displayText;
+        console.log(j);
     };
 
   </script>
