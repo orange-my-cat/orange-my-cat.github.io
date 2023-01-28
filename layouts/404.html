@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
-
-{{- partial "head.html" . -}}
-
-<body class="bg-slate-800">
+<html lang="en">
+  {{- partial "head.html" . -}}
+  <body class="h-screen w-screen overflow-hidden">
+    {{- partial "nav.html" . -}}
+    <div id="404" class="text-4xl text-gray-300 text-justify break-all" style="font-family: 'Montserrat', sans-serif;">
+    </div>
     {{- partial "footer.html" . -}}
-</body>
+  </body>
+  <script>
+    window.onload = () => {
+        text = document.getElementById("404")
+        displayText = "404 NOT FOUND"
+        for (i=0; i<8; i++) {
+            displayText = displayText + " " + displayText
+        }
+        text.innerText = displayText;
+    };
 
+  </script>
 </html>
