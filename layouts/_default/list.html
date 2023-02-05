@@ -5,8 +5,8 @@
         {{ range .Pages }}
         <div class="hover:bg-gray-200 hover:text-red-600 cursor-pointer transition-colors duration-500" onclick="location.href='{{.Permalink}}'">
             <hr class="border-gray-200">
-            <div class="p-4">
-                <div class="text-xl font-semibold">{{.Title}}</div>
+            <div class="py-4 md:px-4">
+                <div class="text-l md:text-2xl font-semibold">{{.Title}}</div>
                 <div class="text-sm">{{ .Date.Format "02-01-2006" }}</div>
                 {{ if .Params.tags }}
                 <div class="mt-0.5 text-sm">{{ range .Params.tags }}#{{ . }} {{ end }}</div>

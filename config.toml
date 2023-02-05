@@ -12,3 +12,6 @@ pluralizelisttitles = false
   instagram = "https://www.instagram.com/ivan.pwv/"
   linkedin = "https://www.linkedin.com/in/ivanpeh/"
   github = "https://github.com/orange-my-cat"
+
+[taxonomies]
+  tag = "tags"
