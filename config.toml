@@ -2,6 +2,7 @@ baseURL = "https://orange-my-cat.github.io/"
 languageCode = "en-us"
 title = "Ivan"
 googleAnalytics = "G-4T0TFTB785"
+pluralizelisttitles = false
 
 [Params]
   longTitle = "Ivan - Data Science & Maths Student at UWA"

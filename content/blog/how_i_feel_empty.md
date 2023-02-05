@@ -2,6 +2,7 @@
 title: "How I Feel Empty"
 date: 2023-02-03
 draft: true
+tags: []
 ---
 
 What am I writing this for? Why do I even want to write anything? I don't have anything to write about. Can I even write? I have so much else I can do, why should I write? What else can I do? And why should I even do anything? Why did I do everything in the first place?
