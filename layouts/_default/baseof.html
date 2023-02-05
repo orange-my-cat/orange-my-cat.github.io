@@ -3,9 +3,7 @@
   {{- partial "head.html" . -}}
   <body class="bg-gray-100">
     {{- partial "nav.html" . -}}
-    <div class="grid grid-flow-row auto-rows-max ml-20 mr-24 md:ml-64 md:mr-48 z-10 relative">
-      {{ block "main" . }}{{ end }}
-    </div>
+    {{ block "main" . }}{{ end }}
     {{- partial "footer.html" . -}}
   </body>
 </html>
