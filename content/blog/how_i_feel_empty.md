@@ -16,4 +16,4 @@ Feelings of emptiness are like checkpoints in our lives. Where to next? We don't
 
 In the end, being happy in life is what's important to me, more than any other things, call me selfish but, just chill.
 
-![dead inside meme](/blogs/chill.png)
+![trying_to_do_better.png](/blogs/trying_to_do_better.png)
