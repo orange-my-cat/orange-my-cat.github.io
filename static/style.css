@@ -8,6 +8,17 @@ article img {
     max-height: 300px;
 }
 
+article a {
+    text-decoration: underline;
+    transition-property: color, text-decoration-color;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+article a:hover {
+    color: #dc2626;
+}
+
 @media screen and (min-width: 768px) {
     article p {
         font-size: 1.25rem; /* 20px */

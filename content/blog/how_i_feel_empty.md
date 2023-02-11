@@ -1,7 +1,7 @@
 ---
 title: "How I Feel Empty"
 date: 2023-02-03
-tags: ["mentalhealth"]
+tags: ["life", "mentalhealth"]
 ---
 
 What am I writing this for? Why do I even want to write anything? I don't have anything to write about. Can I even write? I have so much else I can do, why should I write? But what else can I do? And why should I even do anything? Why did I do everything in the first place? These were my thoughts before I deleted everything I wrote and started over. I call these thoughts combined with what I'm feeling: emptiness. I've felt emptiness more than a few times throughout my life.
