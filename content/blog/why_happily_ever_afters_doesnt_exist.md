@@ -1,0 +1,18 @@
+---
+title: "Why Happily Ever Afters Doesn't Exist"
+date: 2023-02-14
+tags: ["psychology"]
+---
+
+In [1978](https://doi.org/10.1037/0022-3514.36.8.917), researchers at Northwestern University and the University of Massachusetts asked recent Illinois State Lottery winners whose prizes ranged from $50,000 to $1 million, as well as recent victims of catastrophic accidents who were now paraplegic or quadriplegic, about their happiness. The two groups were asked to rate their level of enjoyment from everyday activities such as talking to friends, watching TV, eating breakfast, laughing at a joke, or receiving a compliment. And guess what? They discovered that the accident victims reported more happiness from everyday pleasures than lottery winners.
+
+This makes winning the lottery seem counterintuitive, doesn't it? Although results show lottery winners rated winning much higher than victims rated their accident, the winners’ ratings of everyday happiness were 3.33 out of 5, and the accident victims’ averaged answers were 3.48. In contrast, the control group of the study had a rating of 3.82, the highest among the three groups. Although lottery winners felt very good about winning the lottery, they took less pleasure than controls in a variety of ordinary events and were in general less happier.
+
+But why? This is because of what's known as [hedonic adaptation](https://www.cmu.edu/dietrich/sds/docs/loewenstein/HedonicAdaptation.pdf). It is the observed tendency for humans to adapt to pleasant or unpleasant sensations and return to a stable level of happiness. Similar to other types of adaptation, it serves to protect organisms by reducing the impact from external stimuli. Persistent hedonic states such as those experienced by the accident victims mentioned above can have accompanying destructive psychological consequences. Thus hedonic adaptation protects us from these effects.
+
+However, this protection comes with a cost. The most obvious cost of hedonic adaptation is what's called the hedonic treadmill. Which implies that any transitory satisfactions will eventually give way to indifference or even dissatisfaction. One big example is human's nature to chase after never ending goals, success, money, etc. But when the moment of triumph is over, the attainment of a goal is almost like a let-down. Adaptation to pleasurable experiences may also cause destructive addictions which are due to the decreasing pleasure from an activity, and the displeasure when we stop the activity. Hedonic adaptation also have other effects such as degrading the quality of our decisions, eroding our values and standards, and reducing our empathy & understanding towards others.
+
+So what can we do about it? We probably need to learn that both happiness and unhappiness are just part of life. Sometimes in order to appreciate happiness we need to experience unhappiness. Being unhappy isn't necessarily a bad thing, and happiness sure isn't avoiding unhappiness. We can never find happiness, we can only feel happiness. Just like we can never avoid being sad. I think instead of focusing on the destination, we should enjoy the journey more, and instead of what we don't have, learn to appreciate what we do. Or just be like me, learning about psychology just to fight against human nature.
+
+![hedonic_adaptation](/blogs/hedonic_adapation.png)
+Image credit: [https://blog.doist.com/hedonic-adaptation-comic/](https://blog.doist.com/hedonic-adaptation-comic/)
