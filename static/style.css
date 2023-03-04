@@ -19,6 +19,13 @@ article a:hover {
     color: #dc2626;
 }
 
+article pre {
+    white-space: pre-wrap;
+    background-color: #dadedf;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
 @media screen and (min-width: 768px) {
     article p {
         font-size: 1.25rem; /* 20px */
