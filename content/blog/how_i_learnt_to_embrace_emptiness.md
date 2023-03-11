@@ -1,7 +1,7 @@
 ---
 title: "How I Learnt to Embrace Emptiness"
 date: 2023-02-03
-tags: ["mental_health"]
+tags: ["life", "mental_health"]
 ---
 
 Have you ever found yourself wondering why you're writing something? Or questioning your ability to write at all? Do you feel like you have nothing to write about, or that you're not sure why you even want to write in the first place? These thoughts, combined with a feeling of emptiness, are something I've experienced more than a few times in my life.

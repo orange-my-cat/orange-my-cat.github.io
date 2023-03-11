@@ -1,7 +1,7 @@
 ---
 title: "First Snorkeling Day Trip"
 date: 2023-02-08
-tags: ["fun"]
+tags: ["life", "fun"]
 ---
 
 I've always wanted to try diving or snorkeling in the ocean. I like pretty things and I've seen pictures of the beautiful underwater world. But I also had quite a bit of [fear towards the deep sea](https://en.wikipedia.org/wiki/Thalassophobia). So recently, I decided to join [StudyPerth](https://www.studyperth.com.au/) for a snorkeling day trip to face my fears and experience something new.
