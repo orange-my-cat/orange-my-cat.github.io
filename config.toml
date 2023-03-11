@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Ivan"
 googleAnalytics = "G-4T0TFTB785"
 pluralizelisttitles = false
+paginate = 10
 
 [Params]
   longTitle = "Ivan - Data Science & Maths Student at UWA"
