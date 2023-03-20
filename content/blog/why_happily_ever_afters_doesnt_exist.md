@@ -1,7 +1,7 @@
 ---
 title: "Why Happily Ever Afters Doesn't Exist"
 date: 2023-02-14
-tags: ["psychology"]
+tags: ["knowledge", "psychology"]
 ---
 
 In [1978](https://doi.org/10.1037/0022-3514.36.8.917), researchers at Northwestern University and the University of Massachusetts asked recent Illinois State Lottery winners whose prizes ranged from $50,000 to $1 million, as well as recent victims of catastrophic accidents who were now paraplegic or quadriplegic, about their happiness. The two groups were asked to rate their level of enjoyment from everyday activities such as talking to friends, watching TV, eating breakfast, laughing at a joke, or receiving a compliment. And guess what? They discovered that the accident victims reported more happiness from everyday pleasures than lottery winners.

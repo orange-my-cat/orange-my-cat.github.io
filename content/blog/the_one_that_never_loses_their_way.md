@@ -1,7 +1,7 @@
 ---
 title: "The One That Never Loses Their Way"
 date: 2023-03-02
-tags: ["mathematics"]
+tags: ["knowledge", "mathematics"]
 ---
 
 [Eigenvalues and eigenvectors](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors) are often cited as crucial components in data science and machine learning, yet it is perplexing why they are not emphasized more in traditional data science curricula. Seeking answers, I pursued a second major in Mathematics and Statistics in my university.
