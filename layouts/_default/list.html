@@ -3,7 +3,7 @@
     <h1 class="mb-8 text-4xl md:text-6xl font-bold text-center">{{replace .Title "_" " "}}</h1>
     <div class="grid grid-flow-row auto-rows-max w-full">
         {{ range .Paginator.Pages }}
-        <div class="md:hover:bg-gray-200 hover:text-red-600 cursor-pointer transition-colors duration-500" onclick="location.href='{{.Permalink}}'">
+        <div class="hover:text-red-600 cursor-pointer transition-colors duration-500" onclick="location.href='{{.Permalink}}'">
             <hr class="border-gray-200">
             <div class="py-4 md:px-4">
                 <div class="text-l md:text-2xl font-semibold">{{.Title}}</div>
