@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   {{- partial "head.html" . -}}
-  <body class="bg-gray-100 w-full overflow-hidden">
+  <body class="bg-neutral-900 text-slate-300 w-full overflow-hidden">
     {{- partial "nav.html" . -}}
-    <div id="404" class="fixed ml-12 mr-12 md:ml-64 md:mr-48 text-2xl md:text-4xl text-gray-300 text-justify break-all" style="font-family: 'Montserrat', sans-serif;">
+    <div id="404" class="fixed mt-4 mx-4 lg:ml-56 lg:mr-40 text-2xl lg:text-4xl text-gray-600 text-justify break-all" style="font-family: 'Montserrat', sans-serif;">
     </div>
   </body>
   <script>
     window.onload = () => {
         text = document.getElementById("404")
-        displayText = "404 NOT FOUND"
-        j = 1
-        for (i=0; i<12; i++) {
-            displayText = displayText + " " + displayText
-            j = j + j
-        }
-        text.innerText = displayText;
-        console.log(j);
-    };
+        glitch = document.createElement("a")
+        glitchContent = document.createElement("div")
+        glitch.classList.add("glitched");
+        glitchContent.innerText = "GO BACK"
+        glitch.href = "/"
 
+        glitch.appendChild(glitchContent)
+        glitch.appendChild(glitchContent.cloneNode(true))
+        glitch.appendChild(glitchContent.cloneNode(true))
+
+        for (i=0; i<43; i++) {
+          text.innerHTML += "404 NOT FOUND ".repeat(Math.ceil(Math.random()*13))
+          text.appendChild(glitch)
+          text.innerHTML += " "
+        }
+    };
   </script>
 </html>
