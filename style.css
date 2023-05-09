@@ -57,3 +57,81 @@ article pre {
         margin-bottom: 1.5rem;
     }
 }
+
+.glitched {
+    position: relative;
+    display: inline;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.glitched > div {
+    position: absolute;
+    display: inline-block;
+}
+
+.glitched > div:first-child {
+    color: #f16f6f;
+    animation: glitch1 1s linear infinite;
+}
+
+@keyframes glitch1 {
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+      opacity: 0.75;
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+      opacity: 1;
+    }
+    62%{
+      transform: translate(0,0) skew(5deg);
+      opacity: 0.25; 
+    }
+}
+
+.glitched > div:nth-child(2) {
+    color: #67f3da;
+    animation: glitch2 1s linear infinite;
+}
+  
+@keyframes glitch2 {
+    2%,64%{
+      transform: translate(2px,-2px);
+      opacity: 1;
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+      opacity: 0.25;
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg);
+      opacity: 0.75;
+    }
+}
+  
+.glitched > div:last-child {
+    color: #ffffff;
+    animation: glitch3 1.5s linear infinite;
+}
+
+.glitched > div:last-child:hover {
+    color: #dc2626;
+}
+  
+@keyframes glitch3 {
+    2%,64%{
+      transform: translate(-2px,0);
+      opacity: 0.25;
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+      opacity: 0.75;
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg);
+      opacity: 1;
+    }
+}
+  
